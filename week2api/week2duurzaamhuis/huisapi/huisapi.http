@@ -1,0 +1,6 @@
+@huisapi_HostAddress = http://localhost:5036
+
+GET {{huisapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
