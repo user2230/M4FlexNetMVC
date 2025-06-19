@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+    <section>mijn nieuwe html code</section>
+
+<div style="border: 1px solid #ccc; padding: 20px; max-width: 600px;">
+
+    @{
+        foreach(NewsItem item in Model)
+        {
+    <section>@item.Title</section>
+    <section>@item.Content</section>
+    <section>
+        <img src="@item.ImageUrl" />
+    </section>
+        }
+    }
+</div>
